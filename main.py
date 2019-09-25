@@ -11,4 +11,8 @@ def run(filter_field, value):
     print(json.dumps(filtered, indent=2))
     
 
-run("author", "a2")
+#run("author", "a2")
+
+CSV_Man = CSV_Manager("articles.csv")
+
+CSV_Man.read()
