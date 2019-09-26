@@ -6,3 +6,7 @@ class Manipulator:
         return list(
             filter(lambda d: d[key] == value, self.data)
         )
+
+    def relevant(self,key):
+        print(self.data[key])
+

@@ -4,6 +4,7 @@ import csv
 class CSV_Manager:
     def __init__(self, filename):
         self.filename = filename
+        self.mapped_dict={}
 
     def get_csv_as_dicts(self):
         with open(self.filename) as csv_file:
@@ -27,7 +28,7 @@ class CSV_Manager:
         with open(self.filename) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=",")
             rows = [row for row in csv_reader]
-            print(rows)
+            # print(rows)
 
             a1_array = []
             a2_array = []
@@ -52,7 +53,7 @@ class CSV_Manager:
                 elif row[2]=='c3':
                     c3_array.append(row)
 
-            mapped_dict = {
+            self.mapped_dict = {
                 "author1" : a1_array,
                 "author2" : a2_array,
                 "author3" : a3_array,
@@ -61,7 +62,7 @@ class CSV_Manager:
                 "category3" : c3_array
             }
 
-            print(mapped_dict)
+            # print(self.mapped_dict)
             
 
             
