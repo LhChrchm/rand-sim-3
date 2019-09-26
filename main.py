@@ -15,8 +15,8 @@ def run(filter_field, value=False):
         manipulator = Manipulator(reader.mapped_dict)
         manipulator.relevant(filter_field)
 
-run("author", "a2")
-run("author2")
+run("author", "a1")
+run("author1")
 
 
 

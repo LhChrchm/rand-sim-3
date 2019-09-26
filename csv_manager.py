@@ -39,19 +39,19 @@ class CSV_Manager:
             
             for row in rows:
                 if row[3]=='a1':
-                    a1_array.append(row)
+                    a1_array.append({"title" : row[0],"date":row[1],"category":row[2],"author":row[3]})
                 elif row[3]=='a2':
-                    a2_array.append(row)
+                    a2_array.append({"title" : row[0],"date":row[1],"category":row[2],"author":row[3]})
                 elif row[3]=='a3':
-                    a3_array.append(row)
+                    a3_array.append({"title" : row[0],"date":row[1],"category":row[2],"author":row[3]})
 
             for row in rows:
                 if row[2]=='c1':
-                    c1_array.append(row)
+                    c1_array.append({"title" : row[0],"date":row[1],"category":row[2],"author":row[3]})
                 elif row[2]=='c2':
-                    c2_array.append(row)
+                    c2_array.append({"title" : row[0],"date":row[1],"category":row[2],"author":row[3]})
                 elif row[2]=='c3':
-                    c3_array.append(row)
+                    c3_array.append({"title" : row[0],"date":row[1],"category":row[2],"author":row[3]})
 
             self.mapped_dict = {
                 "author1" : a1_array,

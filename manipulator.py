@@ -1,3 +1,5 @@
+import json
+
 class Manipulator:
     def __init__(self, data):
         self.data = data
@@ -8,5 +10,5 @@ class Manipulator:
         )
 
     def relevant(self,key):
-        print(self.data[key])
+        print(json.dumps(self.data[key], indent=2))
 
